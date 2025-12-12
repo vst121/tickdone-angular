@@ -1,27 +1,96 @@
-# TickdoneAngular
+# TickDone Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.20.
+A modern, responsive todo application built with Angular 18. This frontend application allows users to manage their tasks with deadlines, track completion status, and filter todos efficiently.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- ✅ Add new todos with optional deadlines
+- ✅ Mark todos as complete or incomplete
+- ✅ Delete todos with confirmation dialog
+- ✅ Filter todos by status (All, Active, Completed)
+- ✅ Highlight overdue todos
+- ✅ Real-time items counter
+- ✅ Responsive design
+- ✅ Error handling and loading states
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js (v18 or higher)
+- Angular CLI (v18.2.20)
+- A running backend API server at `https://localhost:7127/todos`
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd tickdone-angular
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Running the Application
+
+1. Ensure the backend API is running on `https://localhost:7127`
+
+2. Start the development server:
+
+   ```bash
+   npm start
+   # or
+   ng serve
+   ```
+
+3. Open your browser and navigate to `http://localhost:4200`
+
+The application will automatically reload if you change any source files.
+
+## API Requirements
+
+The application expects a REST API with the following endpoints:
+
+- `GET /todos` - Retrieve all todos
+- `POST /todos` - Create a new todo
+- `PUT /todos/:id` - Update a todo
+- `DELETE /todos/:id` - Delete a todo
+
+Todo object structure:
+
+```json
+{
+  "id": number,
+  "taskName": string,
+  "deadline": string | null,
+  "done": boolean
+}
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To build the project for production:
 
-## Running unit tests
+```bash
+npm run build
+# or
+ng build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The build artifacts will be stored in the `dist/` directory.
 
-## Running end-to-end tests
+## Testing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Run unit tests:
 
-## Further help
+```bash
+npm test
+# or
+ng test
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Further Help
+
+For more information on Angular CLI commands, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli).
