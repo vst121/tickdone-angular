@@ -7,7 +7,7 @@ import { Todo } from './todo.model';
   providedIn: 'root'
 })
 export class TodoService {
-  private apiUrl = 'https://localhost:7127/todos';
+  private apiUrl = 'http://localhost:8080/todos';
 
   constructor(private http: HttpClient) {}
 
