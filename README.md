@@ -91,6 +91,10 @@ npm test
 ng test
 ```
 
+## Screenshot
+
+![Main Page](docs/Screenshot.jpg)
+
 ## Further Help
 
 For more information on Angular CLI commands, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli).
