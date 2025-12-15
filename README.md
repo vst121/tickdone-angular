@@ -17,7 +17,7 @@ A modern, responsive todo application built with Angular 18. This frontend appli
 
 - Node.js (v18 or higher)
 - Angular CLI (v18.2.20)
-- A running backend API server at `https://localhost:7127/todos`
+- A running backend API server at `http://localhost:3000/todos`
 
 ## Installation
 
@@ -35,7 +35,7 @@ A modern, responsive todo application built with Angular 18. This frontend appli
 
 ## Running the Application
 
-1. Ensure the backend API is running on `https://localhost:7127`
+1. Ensure the backend API is running on `http://localhost:3000`
 
 2. Start the development server:
 
@@ -95,6 +95,6 @@ ng test
 
 ![Main Page](docs/Screenshot.jpg)
 
-## Further Help
+## License
 
-For more information on Angular CLI commands, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli).
+This project is licensed under the MIT License.
